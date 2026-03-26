@@ -8,6 +8,28 @@ body {
   background-color: #823b3b;
   color: #ffffffd7;
 }
+
+.bio {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.middle {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .container {
   max-width: 800px;
   margin: auto;

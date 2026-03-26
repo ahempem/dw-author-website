@@ -25,14 +25,34 @@
       </header>
 
       <section class="bio">
-        <!-- edit author bio below -->
-        <p>
-          I read and <em>write</em> 
-          <p>between the lines.</p>
-        </p>
-        <p>
-        </p>
-      </section>
+      <div class="bio">
+  <span class="left">I read</span>
+  
+  <span class="middle" id="middleText">
+    between the lines
+  </span>
+  
+  <span class="right">and write.</span>
+</div>
+</section>
+<script>
+const middle = document.getElementById("middleText");
+
+document.addEventListener("mousemove", (e) => {
+  const screenWidth = window.innerWidth;
+  const mouseX = e.clientX;
+
+  // Define "middle zone" (e.g. middle 40% of screen)
+  const leftBound = screenWidth * 0.3;
+  const rightBound = screenWidth * 0.7;
+
+  if (mouseX > leftBound && mouseX < rightBound) {
+    middle.style.opacity = 1;
+  } else {
+    middle.style.opacity = 0;
+  }
+});
+</script>
 
        <!-- menu header --> 
     <div id="header-placeholder"></div>
@@ -59,12 +79,12 @@
         <h2>THE RECENTLY LAPSED </h2>
         <ul>
           <li>
-            <a href="https://www.visibleinkmag.com/here-and-then-nonfiction/how-to-welcome-yourself-back-home"><em>How To Welcome Yourself Back Home</em> Nonfiction Publication in Visink Digital Issue 2 (2025)</a>
+            <a href="https://www.visibleinkmag.com/here-and-then-nonfiction/how-to-welcome-yourself-back-home">Nonfiction Publication in Visink Digital Issue 2 (2025)</a>
           </li>
           <li>
-            <a href="https://www.visibleinkmag.com/here-and-then-poetry/black-lab-in-summer"><em>Black Lab in Summer</em> Poetry Publication in Visink Digital Issue 2 (2025)</a>
+            <a href="https://www.visibleinkmag.com/here-and-then-poetry/black-lab-in-summer">Poetry Publication in Visink Digital Issue 2 (2025)</a>
           </li>
-          <li>Recipient: RMIT Emerging Screenwriter Fellowship Award (2024)</li>
+          <li>Recipient: RMIT Emerging Screenwriter Fellowship (2024)</li>
         </ul>
       </section>
 
@@ -73,10 +93,10 @@
         <ul>
           <li>Writer of a storybook for my Mum’s birthday (2010)</li>
           <li>
-            <a href="https://books.google.com.au/books/about/Take_Some_of_Mine.html?id=KI-JzQEACAAJ&source=kp_book_description&redir_esc=y">COVID-lockdown crazed self published poetry book - under pen name Owen Lee-Hueman (2019) </a>
+            <a href="https://books.google.com.au/books/about/Take_Some_of_Mine.html?id=KI-JzQEACAAJ&source=kp_book_description&redir_esc=y">COVID-lockdown poetry book - under pen name Owen Lee-Hueman (2019) </a>
           </li>
           <li><a href="https://www.booktopia.com.au/the-state-of-things-alice-pembroke/book/9789357443524.html?srsltid=AfmBOope4P1Pt6CGm9DpHJOuWfVi5cqk6Rmkuvkw5I1W4jPcq_J1edEx">Writer of <em>The State of Things</em> - poetry journal (2023)</a></li>
-          <li>Wattpad writer (2014-2016), <u> but I'll keep that link to myself</u></li>
+          <li>Wattpad writer (2013-2016), <u> but I'll keep that link to myself</u></li>
         </ul>
       </section>
 
